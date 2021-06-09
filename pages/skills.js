@@ -13,6 +13,7 @@ export default function Skills(){
           <div className="competence" data-animated-width data-label="React" data-level="90"></div>
           <div className="competence" data-animated-width data-label="Next JS" data-level="90"></div>
           <div className="competence" data-animated-width data-label="Flutter" data-level="80"></div>
+          <div className="competence" data-animated-width data-label="Spring Boot" data-level="80"></div>
         </div>
       </div>
     </section>

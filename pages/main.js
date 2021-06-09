@@ -15,13 +15,13 @@ export default function Main(){
             </p>
             <div className="contact__buttons">
               <a href="mailto:id491112@gmail.com" className="contact__button" data-with-animation data-animation-begin="bottom" data-animation-delay="1.5">M'embaucher</a>
-              <a href="#" className="cv__button" data-with-animation data-animation-begin="bottom" data-animation-delay="1.8">Mon CV</a>
+              <a href="cv.pdf" className="cv__button" data-with-animation data-animation-begin="bottom" data-animation-delay="1.8">Mon CV</a>
             </div>
           </div>
           <div className="right__information">
-            <a href="https://github.com/minato223"><i className="fa fa-github social" data-with-animation data-animation-begin="left" data-animation-delay="1"></i></a>
-            <i className="fa fa-facebook social" data-with-animation data-animation-begin="left" data-animation-delay="1.5"></i>
-            <i className="fa fa-linkedin social" data-with-animation data-animation-begin="left" data-animation-delay="2"></i>
+            <a href="https://github.com/minato223" target="_blank" className="social__icon github"><i className="fa fa-github social" data-with-animation data-animation-begin="left" data-animation-delay="1"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100008944208707" target="_blank" className="social__icon facebook"><i className="fa fa-facebook social" data-with-animation data-animation-begin="left" data-animation-delay="1.5"></i></a>
+            <a href="https://www.linkedin.com/in/lamine-diarra-a46504196?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BE%2FiS%2FgdGRKu0deO%2BL%2FcrZw%3D%3D" target="_blank" className="social__icon linkedin"><i className="fa fa-linkedin social" data-with-animation data-animation-begin="left" data-animation-delay="2"></i></a>
             <img
               src="./images/minato.png"
               className="my__profil"

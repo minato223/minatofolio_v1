@@ -47,7 +47,7 @@ const addSkillsLevel = ()=>{
     }
 }
 addSkillsLevel()
-const ratio = .4
+const ratio = .2
 const options = {
   root: null,
   rootMargin: '0px',
@@ -65,7 +65,7 @@ var observer = new IntersectionObserver((entries, observer)=>{
       }
       let animatedElements = entry.target.querySelectorAll('[data-with-animation]')
       animatedElements.forEach(animatedElement=>{
-        let delay = animatedElement.dataset.animationDelay
+        let delay = animatedElement.dataset.animationDelay * .6
         let animationType = animatedElement.dataset.animationType ?? "translate"
         animatedElement.style.transition = `${delay}s cubic-bezier(.5,0,0,1)`
         animatedElement.style.opacity=1
@@ -154,7 +154,7 @@ window.onload=()=>{
       <link rel="icon" href="images/picaso.svg" sizes="any" type="image/svg+xml"></link>
       <title>Minato</title>
       </Head>
-      <a href="#"><i className="scroll fa fa-arrow-circle-o-up"></i></a>
+      <a href="#" className="scroll"><i className="fa fa-arrow-circle-o-up"></i></a>
     <div className="nav__container">
       <nav className="nav__bar">
       <div className="nav__logo"><h3 className="logo__title">Minato</h3></div>

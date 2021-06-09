@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;  
   overflow-wrap: anywhere;
-
+  outline: none;
 }
 :root {
   --button-color: #ec495e;
@@ -32,6 +32,8 @@ html{
 .container {
   max-width: 960px;
   margin: 0px auto;
+  z-index: 100;
+    position: relative;
 }
 a {
   text-decoration: none;
@@ -40,26 +42,33 @@ a {
 section{
     position: relative;
 }
-i.social{
+a.social__icon{
+  display: inline-block;
   padding: 10px;
   color: var(--button-color);
   background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
   position: absolute;
   border-radius: 50%;
-  font-size: var(--text-medium-size);
   z-index: 10;
   right: 0;
   animation: gitAnimation 1s ease-in-out infinite alternate;
 }
-.social.fa-github{
-  top: 15%;
+i.social{
+  font-size: var(--text-medium-size);
 }
-.social.fa-facebook{
+a.facebook i{
+  font-size: calc(var(--text-medium-size));
+}
+a.github{
+  top: 15%;
+  padding: 11px;
+}
+a.facebook{
   padding: 10px 14px;
   top: 28%;
 }
-.social.fa-linkedin{
+a.linkedin{
   top: 41%;
 }
 
@@ -72,7 +81,7 @@ i.social{
   }
 }
 
-i.scroll,i.step__button{
+a.scroll,i.step__button{
   z-index: 90;
   background-color: var(--button-color);
   padding: 7px;
@@ -106,14 +115,17 @@ i.step__button.next{
 i.step__button.prev{
   left: 0;
 }
-i.scroll{
+a.scroll{
+  display: inline-block;
+  z-index: 1500;
   border-radius: 6px;
+  padding: 7px 8px;
   position: fixed;
-  bottom: 20px;
+  bottom: 30px;
   right: 20px;
   transform: translateY(100px);
 }
-i.scroll.visible{
+a.scroll.visible{
   transform: translateY(0);
 }
 .caneva__shadow{
@@ -144,7 +156,7 @@ i.scroll.visible{
   top: 0;
   left: 0;
   right: 0;
-  z-index: 100;
+  z-index: 2000;
   display: flex;
     transition: .3s cubic-bezier(.5,0,0,1);
     justify-content: center;
