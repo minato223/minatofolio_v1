@@ -14,10 +14,10 @@ export default function Profile(){
             <div className="profil__information">
               <h3 className="profil__title" data-with-animation data-animation-begin="bottom" data-animation-delay="0.5">A propos de moi</h3>
               <p data-with-animation data-animation-begin="bottom" data-animation-delay="1">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-                adipisci fuga, veritatis, dolores dignissimos dicta et quo animi
-                labore modi vero natus quae atque laborum. Temporibus
-                perferendis unde quaerat labore?
+                e travaille en tant que développeur indépendant depuis 2019. J'ai toujours été quelqu'un qui a à la fois
+un côté créatif et un côté logique. Lorsque j'ai découvert la conception de sites Web à l'université, j'ai
+réalisé que ce serait la solution idéale. Je pouvais utiliser mon côté créatif pour concevoir et mon côté
+logique pour coder. En prime, être à la fois concepteur et développeur me permet de m'assurer qu'aucun détail n'est perdu dans la traduction.
               </p>
               <ul className="list__info">
                 <li data-with-animation data-animation-begin="bottom" data-animation-delay="1.1">
